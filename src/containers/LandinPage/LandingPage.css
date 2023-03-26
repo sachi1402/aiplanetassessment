@@ -1,0 +1,193 @@
+.hero-contaner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003145;
+    background-image: url(../../assets/waves.png);
+    background-repeat:no-repeat;
+    background-position:bottom ;
+    min-height: 26em;
+    padding: 1.5em;
+    color: #fff;
+  }
+  
+  .hero-title {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+  }
+  
+  .hero-img {
+    flex-basis: 40%;
+    /* padding: 1.5em; */
+    
+  }
+  
+  .hearo-heading {
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 1em;
+    color: #FFFFFF;
+  }
+  
+  .hearo-desc {
+    line-height: 1.5;
+    align-self: flex-start;
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    color: #FFFFFF;
+  }
+  .btn-upload {
+    display: inline-block;
+    background-color: #50c878;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 1em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 1em;
+    max-width: 19em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .btn-upload:hover {
+    background-color: #3c8040;
+  }
+  
+  
+  .hero-img img {
+    /* width: 8.8em; */
+    max-width: 30%;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+
+  .cards-contnaer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f8f8f8; */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .card-control-pnal {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly ;
+    /* align-items: center; */
+    /* gap: 20%; */
+  }
+  
+  .card-control-pnal button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #777;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .card-control-pnal button.active,
+  .card-control-pnal button:hover {
+    border-bottom: 5px solid #44924C;
+    color: black; 
+  }
+  
+  .card-control-pnal div:first-of-type {
+    display: flex;
+    
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .card-control-pnal input[type="text"] {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 8px 18px;
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+    margin: 0px 25px;
+    /* width: 200px; */
+  }
+  
+  .card-control-pnal select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #555;
+    border-radius: 20px;
+    font-size: 1em;
+    padding: 8px 18px;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card-control-pnal select:hover, .card-control-pnal select:focus {
+    outline: none;
+    border-color: #555;
+  }
+  
+  .card-control-pnal select::placeholder {
+    color: #555;
+  }
+  
+  .card-control-pnal select option {
+    background-color: #fff;
+    color: #555;
+  }
+  
+
+
+  /* hackaton card last sec */
+  .hackathon-card-bag{
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    /* background-color: red; */
+  }
+  .hackathon-card-cont {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+    max-width: 960px;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  
+  @media (min-width: 768px) {
+    .hackathon-card-cont {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: none;
+    }
+  }
+  
+  

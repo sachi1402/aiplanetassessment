@@ -1,0 +1,158 @@
+/* Hackathon Details Page CSS */
+.hackathon-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .details-hero {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero-image {
+    /* width: 50%; */
+    margin-right: 20px;
+  }
+  
+  .hero-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .hero-content {
+    width: 50%;
+  }
+  
+  .hero-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .hero-title h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .hero-fav {
+    color: #f1c40f;
+    /* font-size: 1.5rem; */
+  }
+  
+  .hero-summary {
+    margin-bottom: 20px;
+  }
+  
+  .hero-summary p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .hero-btns button {
+    margin-right: 10px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .hero-btns button:hover {
+    background-color: #27ae60;
+  }
+  
+  .description {
+    width: 80%;
+    margin-right: 20px;
+  }
+  
+  .description h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .description p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .hackathon-details-item {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 50%;
+  }
+  
+  .hackathon-details-item h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hackathon-details-item h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .hackathon-details-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .github-link {
+    background-color: #333;
+    display: inline-block;
+    width: 50%;
+  }
+  
+  .github-link span {
+    margin-left: 10px;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .hero-title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .hero-title h1 {
+      margin-bottom: 10px;
+    }
+  
+    .hero-fav {
+      margin-top: 10px;
+    }
+  
+    .description {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  

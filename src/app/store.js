@@ -1,8 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import {  configureStore } from '@reduxjs/toolkit';
+import { addElement, deleteElement, editElement,reducers } from '../features/hackthons/hackthonSlice'
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+const store = configureStore({
+  reducer: reducers
 });
+
+export default store;
+  
