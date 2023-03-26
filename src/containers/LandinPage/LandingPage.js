@@ -66,20 +66,20 @@ function LandingPage() {
             duis porta turpis eget suspendisse ac pharetra amet. Vel nisl tempus
             nec vitae.{" "}
           </p>
-          <Link to="/submit" class="btn-upload">
+          <Link to="/submit" className="btn-upload">
             Upload Submission
           </Link>
         </div>
         <div className="hero-img">
-          <img className="" src={handimg} alt="placeholder" />
+          <img className="ww" src={handimg} alt="placeholder" />
         </div>
       </div>
 
       <div className="cards-contnaer">
         <div className="card-control-pnal">
           <div>
-            <button className={selcetdbtn&&"active"} onClick={handleAllSubmissions}>  All Submissions </button>
-            <button className= {!selcetdbtn&&"active"} onClick={handleFavoriteSubmissions}> Favorite Submissions </button>
+            <button className={selcetdbtn?"active":''} onClick={handleAllSubmissions}>  All Submissions </button>
+            <button className= {!selcetdbtn?"active":''} onClick={handleFavoriteSubmissions}> Favorite Submissions </button>
           </div>
           <div>
             <input type="text" value={searchTerm} onChange={handleSearch} />
